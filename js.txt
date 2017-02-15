@@ -1,0 +1,49 @@
+JavaScript 
+- prototype
+- script 언어 : 다른언어를 도와주는 개념
+- Data type이 존재 하지 않는다 (var) -- 즉 주변 소스를 보고 var 안에 들어 있는 값을 추정
+
+number - 실수 
+string -  'A'(char x)
+boolean - true/false   -- if('A') 가능 
+null - var n = null;
+undefined - 초기화가 안되어 있다. var n
+
+
+html(구조) , css(표현) , js(행위)  -> DOM 객체를 매개로 커뮤니케이션
+
+
+
+
+
+ JSON 서버와 클라이언트 사이의 통신을 편하게 하기 위해 전송파일을 object로 변경 (누구든 쉽게 변환 가능)
+
+1. server JSON create
+
+2. client JSON -> js script 
+
+3. js object DOM(html)
+
+
+
+
+var user = {
+    id : "Nextree",
+    name : "진강사",
+    gender : "M",
+    email : "kwonkijin@nextree.co.kr",
+    address : "서울시 관악구  신림동..."
+}  // 리터널 객체 여기에 서버에서온걸 집어 넣음
+
+window.onload = function(){
+    document.getElementById("txtId").value = user.id;
+    document.getElementById("txtName").value = user.name;
+    if(user.gender ==="M"){
+        document.getElementById("rdoGenderMale").checked ="checked";
+    }else{
+        document.getElementById("rdoGenderFemale").checked =true;
+    }
+    document.getElementById("txtEmail").value = user.email;
+    document.getElementById("txtAddress").value = user.address;
+    
+}

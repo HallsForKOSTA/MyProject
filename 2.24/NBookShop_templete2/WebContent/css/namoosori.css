@@ -1,0 +1,52 @@
+body {
+    padding:30px 0;
+    border-top:5px solid #428bca;
+}
+article {
+    padding:10px 0;
+}
+.container {
+    width:900px;
+    margin:30px auto;
+}
+.container h2 {
+    font-size: 24px;
+}
+.desc > p {
+    padding:15px;
+}
+.btn-wrap {
+    text-align: right;
+}
+.total-amount {
+    font-size:18px;
+    text-align: right;
+    font-weight: bold;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom:15px;
+}
+.jumbotron {
+    margin:0 200px;
+    background-color: #d9edf7;
+}
+
+/* Star Rating */
+.starRating,
+.starRating span{
+    display:inline-block;
+    height:14px;
+    background:transparent url(../img/icoFiveStar.gif) no-repeat;
+    overflow:hidden;
+}
+.starRating{
+    width:79px;
+    vertical-align:middle;
+}
+.starRating span{
+    font-size:0;
+    line-height:0;
+    vertical-align:top;
+    text-indent:-100px;
+    *text-indent:0;
+    background-position:0 -14px;
+}

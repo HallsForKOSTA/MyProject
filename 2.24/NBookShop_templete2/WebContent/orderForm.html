@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <title>상품목록</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="css/namoosori.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="desc">
+        <p class="bg-info">[홍길동 님] 로그인 되었습니다.</p>
+    </div>
+    <article>
+        <h2>주문 상품</h2>
+        <table class="table table-bordered">
+            <colgroup>
+                <col width="100"/>
+                <col width="*"/>
+                <col width="200"/>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th class="text-center">상품번호</th>
+                    <th class="text-center">상품명</th>
+                    <th class="text-center">가격</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center">1</td>
+                    <td>Java를 배워요.</td>
+                    <td class="text-right">10,000원</td>
+                </tr>
+                <tr>
+                    <td class="text-center">2</td>
+                    <td>JSP/Servlet 일주일 벼락치기</td>
+                    <td class="text-right">20,000원</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="total-amount">주문금액 : 30,000원</div>
+    </article>
+    <article>
+        <h2>주문 정보 입력</h2>
+        <table class="table table-bordered">
+            <colgroup>
+                <col width="200"/>
+                <col width="*"/>
+            </colgroup>
+            <tbody>
+            <tr>
+                <th class="text-center">결재방법</th>
+                <td>
+                    <input type="radio" name="approval" id="CreditCard" />
+                    <label for="CreditCard" style="margin-right:30px;">신용카드</label>
+                    <input type="radio" name="approval" id="Transfer" />
+                    <label for="Transfer">실시간이체</label>
+                </td>
+            </tr>
+            <tr>
+                <th class="text-center">배송지 주소</th>
+                <td><input type="text" size="80" /></td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="btn-wrap">
+            <button class="btn btn-primary" type="submit">주문신청</button>
+        </div>
+    </article>
+</div>
+</body>
+</html>

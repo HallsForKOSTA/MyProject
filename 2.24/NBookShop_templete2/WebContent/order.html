@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <title>상품목록</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="css/namoosori.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="desc">
+        <p class="bg-info">[홍길동 님] 로그인 되었습니다.</p>
+    </div>
+    <article>
+        <h2>주문 상품</h2>
+        <table class="table table-bordered">
+            <colgroup>
+                <col width="100"/>
+                <col width="*"/>
+                <col width="200"/>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th class="text-center">상품번호</th>
+                    <th class="text-center">상품명</th>
+                    <th class="text-center">가격</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center">1</td>
+                    <td>Java를 배워요.</td>
+                    <td class="text-right">10,000원</td>
+                </tr>
+                <tr>
+                    <td class="text-center">2</td>
+                    <td>JSP/Servlet 일
+                        주일 벼락치기</td>
+                    <td class="text-right">20,000원</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="total-amount">주문금액 : 30,000원</div>
+    </article>
+    <article>
+        <h2>주문 정보 확인</h2>
+        <table class="table table-bordered">
+            <colgroup>
+                <col width="200"/>
+                <col width="*"/>
+            </colgroup>
+            <tbody>
+            <tr>
+                <th class="text-center">결재방법</th>
+                <td>실시간 이체</td>
+            </tr>
+            <tr>
+                <th class="text-center">배송지 주소</th>
+                <td>서울 금천구 가산동</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="btn-wrap">
+            <button class="btn btn-default" type="submit">수정</button>
+            <button class="btn btn-primary" type="submit">신청완료</button>
+        </div>
+    </article>
+</div>
+</body>
+</html>

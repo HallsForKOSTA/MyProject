@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <title>상품목록</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="css/namoosori.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <form class="form-signin">
+        <h2 class="form-signin-heading">로그인</h2>
+        <!-- 로그인 정보가 일치하지 않는 경우 메세지 -->
+        <div class="desc" style="display:none;">
+            <p class="bg-danger">[!] 로그인 정보가 일치하지 않습니다. 아이디 or 비밀번호를 확인하세요.</p>
+        </div>
+        <!-- //로그인 정보가 일치하지 않는 경우 메세지 -->
+        <table class="table table-bordered">
+            <colgroup>
+                <col width="200"/>
+                <col width="*"/>
+            </colgroup>
+            <tbody>
+            <tr>
+                <th class="text-center">로그인 ID</th>
+                <td><input type="text" id="inputId" placeholder="로그인 ID" /></td>
+            </tr>
+            <tr>
+                <th class="text-center">패스워드</th>
+                <td><input type="password" id="inputPassword" placeholder="패스워드" /></td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="text-right">
+            <button class="btn btn-primary" type="submit">로그인</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

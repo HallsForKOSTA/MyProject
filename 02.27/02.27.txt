@@ -1,0 +1,32 @@
+contextPath
+
+Jsp파일을 폴더로 따로관리
+
+
+슬러시가 없으면 자기부터 찾음
+
+
+../ 나보다 바로위
+
+./현재
+
+server에서 
+
+모듈 edit에서 path를 간단하게 바꾼다
+
+
+<link rel="stylesheet" href="../style/css/style.css"> <!-- 이렇게 해도 되는데 안함 contextpath 사용 -->
+
+<link rel="stylesheet" href="hr/style/css/style.css">
+
+<c:set var = ":ctx">${pageContext.request.contextPath }</c:set>
+<link rel="stylesheet" href="${ctx }/style/css/style.css">
+
+
+<form action="hr/login.do" method="post">  
+
+<form action="login.do" method="post">
+
+<form action="${ctx }/login.do" method="post">
+
+

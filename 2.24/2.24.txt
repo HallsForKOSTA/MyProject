@@ -1,0 +1,16 @@
+sourceForge
+stackoverflow
+
+
+spring 가면 serviceLogic을 모르고 컨테이너에서 new를 한다.
+CustomerService만 알고 있음	
+
+clinent가 1000개일때 sesstion 이 1000개이면
+
+session 모두 접근 하기 때문에 과부하 그래서 session 최소화
+
+session 을 정보를 잃을때 인델리게이트
+
+dipatch redirect 
+디스패치는 url이 안바껴서 중간 페이지 못들어감
+리다이렉트 url 바낌

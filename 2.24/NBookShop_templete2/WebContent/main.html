@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <title>상품목록</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="css/namoosori.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <article>
+        <h2>상품 목록</h2>
+        <table class="table table-bordered">
+            <colgroup>
+                <col width="60"/>
+                <col width="100"/>
+                <col width="*"/>
+                <col width="150"/>
+                <col width="120"/>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th class="text-center"></th>
+                    <th class="text-center">상품번호</th>
+                    <th class="text-center">상품명</th>
+                    <th class="text-center">가격</th>
+                    <th class="text-center">평점</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center"><label><input type="checkbox"/></label></td>
+                    <td class="text-center">1</td>
+                    <td>Java를 배워요.</td>
+                    <td class="text-right">10,000원</td>
+                    <td><p><span class="starRating"><span style="width:80%">4점</span></span></p></td>
+                </tr>
+                <tr>
+                    <td class="text-center"><label><input type="checkbox"/></label></td>
+                    <td class="text-center">2</td>
+                    <td>JSP/Servlet 일주일 벼락치기</td>
+                    <td class="text-right">20,000원</td>
+                    <td><p><span class="starRating"><span style="width:40%">2점</span></span></p></td>
+                </tr>
+                <tr>
+                    <td class="text-center"><label><input type="checkbox"/></label></td>
+                    <td class="text-center">3</td>
+                    <td>JavaScript 기초</td>
+                    <td class="text-right">15,000원</td>
+                    <td><p><span class="starRating"><span style="width:80%">4점</span></span></p></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="btn-wrap">
+            <button class="btn btn-primary" type="submit">주문하기</button>
+        </div>
+    </article>
+</div>
+</body>
+</html>
